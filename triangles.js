@@ -1,23 +1,20 @@
 <script>
-let triangles, side1, side2, side3, PreScalene, PreScalene2, Scalene,  PreEqui2, 
-EquiAnswer, PreEqui, Isosceles, Equilateral
+let side1, side2, side3
 
 alert("This Program will find detect types of triangles through their sides");
 
-side1: prompt("Please enter the value of the first side");
-side2: prompt("Please enter the value of the second side");
-side3: prompt("Please enter the value of the third side");
+side1: parseInt(prompt("Please enter the value of the first side"));
+side2: parseInt(prompt("Please enter the value of the second side"));
+side3: parseInt(prompt("Please enter the value of the third side"));
  
- 
-PreEqui: (side1 + side2);
-PreEqui2: (side3 * 2);
- 
-if  (PreEqui == PreEqui2) {
-	EquiAnswer: prompt("What Type of triangle do you think it was? (Equilateral, Scalene, Isosceles)");
-    	if (EquiAnswer == "Equilateral", "equilateral") {       
-       alert("You are correct your Triangle is an Equilateral Triangle!");
-        }
-	
-}
+if(side1 == side2 && side2 == side3 && side2 == side1) 
+    alert ("The Triangle is Equilateral");
 
+else if  ((side1==side2 && side2!=side3 ) || (side1!=side2 && side3==side1) || (side1==side2 && side3!=side1)){
+	alert ("The Triangle is and Isosceles triangle");
+   }
+   
+else {
+	alert ("The Triangle is a Scalene Triangle")
+}
 </script>

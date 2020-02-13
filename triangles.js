@@ -1,6 +1,5 @@
 <script>
-let triangles, scalside1, scalside2, scalside3, iside1, iside2, iside3, 
-Scalene, Isosceles, Equilateral 
+let triangles, side1, side2, side3, Scalene, Isosceles, Equilateral 
 
 alert("This Program will find detect types of triangles through their sides")
 
@@ -12,3 +11,4 @@ if (triangles === Scalene) {
 }
 
 </script>
+
